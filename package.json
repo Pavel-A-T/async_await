@@ -2,7 +2,7 @@
   "name": "async_await",
   "version": "1.0.0",
   "description": "async_await [![Build status](https://ci.appveyor.com/api/projects/status/q7hpklvdu1l40yao/branch/master?svg=true)](https://ci.appveyor.com/project/Pavel-A-T/async-await/branch/master)",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
