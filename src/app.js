@@ -1,9 +1,10 @@
 import GameSavingLoader from './gameSavingLoader';
 
-GameSavingLoader.load().then(() => {
-  // saving объект класса GameSaving
-  // const result = {id, created, userInfo} = saving;
-  // resolve(result);
-// }, (error) => {
-  // ...
-});
+(async () => {
+  try {
+    const result = await GameSavingLoader.load();
+    localStorage.setItem('GameSaving', result);
+  } catch (error) {
+    throw new Error(error);
+  }
+})();
